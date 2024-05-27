@@ -1,0 +1,31 @@
+/* ProductDetail.css */
+
+.product-detail-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .product-title {
+    color: #333;
+  }
+  
+  .product-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #45a049;
+  }
+  

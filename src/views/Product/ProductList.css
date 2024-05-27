@@ -1,0 +1,102 @@
+.split-screen-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.product-list-container {
+  flex: 1; /* Take up all available space */
+  overflow-y: auto;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+} 
+
+
+.product-table th,
+.product-table td {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; /* Add border to the right of each cell */
+  color: #333;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.model-column {
+  position: sticky;
+  left: 0;
+  background: white; /* Ensure the background is set to prevent content from showing through */
+  z-index: 1; /* Ensure the column stays on top of other content */
+ }
+
+.product-table td {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+.product-table tr:hover {
+  background-color: #e6f7ff; /* Lighter blue on hover */
+}
+
+.product-table a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.product-table a:hover {
+  color: #0056b3;
+}
+
+.cart-item {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  background-color: #f9c2cc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item p {
+  margin: 0;
+}
+
+.half-page-cart {
+  flex: 0 0 30%; /* Initially hide the cart, but reserve 40% space */
+  display: none;
+  transition: flex 0.3s ease; /* Add transition for smoother animation */
+}
+
+.half-page-cart.half-width {
+  flex: 0 0 20%; /* Expand the cart to 40% width */
+  display: block;
+}
+
+.split-screen-container {
+  display: flex;
+}
+
+.filter-container {
+  width: 20%;
+  padding: auto;
+  border: #0056b3;
+  /* Other styles */
+}
+
+.product-list-container {
+  width: 70%;
+  /* Other styles */
+}
+

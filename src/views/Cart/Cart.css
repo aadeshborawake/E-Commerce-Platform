@@ -1,0 +1,92 @@
+/* Cart.css */
+
+.cart-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .total-section {
+    position: absolute; /* Change to absolute positioning */
+    top: -10px; /* Adjust based on your dashboard header height */
+    right: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .total-section h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .total-section h3:first-child {
+    color: green; /* Total Amount */
+  }
+
+  .total-section h3:last-child {
+    color: blue; /* Total Quantity */
+  }
+  
+  .cart-items {
+    margin-top: 60px; /* Adjust based on the space required for the total section */
+  }
+  
+  fieldset {
+    margin-top: 20px; /* Add margin-top to create space between total section and fieldset */
+  }
+  
+  .cart-item {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .cart-item img {
+    width: 150px;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cart-item-info h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .cart-item-info p {
+    margin: 5px 0;
+  }
+  
+  .cart-item-info .price {
+    color: green;
+  }
+  
+  .cart-item-info .qty {
+    color: blue;
+  }
+  
+  .cart-item-info .remove {
+    align-self: flex-end;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .cart-total {
+    margin-bottom: 20px;
+  }
